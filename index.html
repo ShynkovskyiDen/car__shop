@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car shop</title>
+  </head>
+  <link rel="stylesheet" href="../car__shop/css/reset.css" />
+  <link rel="stylesheet" href="../car__shop/css/style.css" />
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div class="page__nav">
+          <div class="sign__page">
+            <a class="menu__link" href="../car__shop/pages/sign_in.html">Зареєструватися</a>
+          </div>
+          <div class="log__page">
+            <a class="menu__link" href="../car__shop/pages/log_in.html">Увійти</a>
+          </div>
+          <div class="search__page">
+            <a class="menu__link" href="#">Пошук</a>
+          </div>
+        </div>
+        <div class="car__nav">
+          <form class="car__form" action="https://fom.in.ua/echo" method="post">
+            <select class="car__nav--add" name="Тип кузова">
+              <option value="#">Тип кузова</option>
+              <option value="Седан">Седан</option>
+              <option value="Хетчбек">Хетчбек</option>
+              <option value="Мінівен">Мінівен</option>
+              <option value="Позашляховик">Позашляховик</option>
+            </select>
+            <select class="car__nav--add" name="Марка">
+              <option value="#">Марка</option>
+              <option value="Volkswagen">Volkswagen</option>
+              <option value="Skoda">Skoda</option>
+              <option value="HYUNDAI">HYUNDAI</option>
+              <option value="mercedes">mercedes</option>
+              <option value="BMW">BMW</option>
+              <option value="Renault">Renault</option>
+            </select>
+            <select class="car__nav--add" name="Країна">
+              <option value="#">Країна</option>
+              <option value="Німеччина">Німеччина</option>
+              <option value="Корея">Корея</option>
+            </select>
+            <select class="car__nav--add" name="Тип палива">
+              <option value="#">Тип палива</option>
+              <option value="Дизель">Дизель</option>
+              <option value="Бензин">Бензин</option>
+              <option value="Газ">Газ</option>
+            </select>
+            <select class="car__nav--add" name="Комфорт">
+              <option value="#">Комфорт</option>
+              <option value="Новий">Стандарт</option>
+              <option value="Після ремонту">Люкс</option>
+            </select>
+            <select class="car__nav--add" name="Колір">
+              <option value="#">Колір</option>
+              <option value="Червоний">Червоний</option>
+              <option value="Чорний">Чорний</option>
+            </select>
+            <div class="transmission">
+              <label>КПП:</label>
+              Механіка<input type="radio" checked="checked" name="КПП" />
+              Автомат<input type="radio" name="КПП" />
+            </div>
+            <div class="conditions">
+              <label>Стан:</label>
+              <input type="checkbox" checked="Стан" name="Новий" />
+              Новий
+              <input type="checkbox" checked="Стан" name="Після ремонту" />
+              Після ремонту
+              <input type="checkbox" checked="Стан" name="Після ДТП" />
+              Після ДТП
+            </div>
+            <div class="age">
+              <label>Рік:</label>
+              <input class="number" type="number" min="1900" max="2023" placeholder="Від"/>
+              <input class="number" type="number" min="1900" max="2023" placeholder="До"/>
+            </div>
+            <div class="price">
+              <label>Ціна:</label>
+              <input class="number" type="number" min="0" step="100" placeholder="Від"/>
+              <input class="number" type="number" min="0" step="100" placeholder="До"/>
+            </div>
+            <input class="search__button" type="submit" name="Пошук" value="Пошук"/>
+          </form>
+        </div>
+      </div>
+      <div class="main">
+        <div class="car__block">
+          <img src="../car__shop/images/audi.webp" alt="Audi" class="car__image"/>
+          <div class="car__desc">
+            <h2 class="car__name">Audi A5 2.0Т Quattro</h2>
+            <h3 class="car__price">623 000грн</h3>
+            <ul class="car__tips">
+              <li>Тип кузова: Седан</li>
+              <li>Країна виробник: Японія</li>
+              <li>Рік: 2006</li>
+              <li>Стан: Новий</li>
+              <li>Тип палива: Бензин</li>
+              <li>Тип КП: Механіка</li>
+              <li>Колір: Сірий</li>
+              <li>Комфорт: Стандарт</li>
+            </ul>
+          </div>
+        </div>
+        <div class="car__block">
+          <img src="../car__shop/images/Renault.webp" alt="Renault" class="car__image"/>
+          <div class="car__desc">
+            <h2 class="car__name">Renault Scenic 2</h2>
+            <h3 class="car__price">184 000грн</h3>
+            <ul class="car__tips">
+              <li>Тип кузова: Купе</li>
+              <li>Країна виробник: Франція</li>
+              <li>Рік: 2005</li>
+              <li>Стан: Новий</li>
+              <li>Тип палива: Дизель</li>
+              <li>Тип КП: Автомат</li>
+              <li>Колір: Червоний</li>
+              <li>Комфорт: Стандарт</li>
+            </ul>
+          </div>
+        </div>
+        <div class="car__block">
+          <img src="../car__shop/images/honda.webp" alt="Honda" class="car__image"/>
+          <div class="car__desc">
+            <h2 class="car__name">Honda Accord 7</h2>
+            <h3 class="car__price">276 000грн</h3>
+            <ul class="car__tips">
+              <li>Тип кузова: Седан</li>
+              <li>Країна виробник: Японія</li>
+              <li>Рік: 2006</li>
+              <li>Стан: Новий</li>
+              <li>Тип палива: Бензин</li>
+              <li>Тип КП: Механіка</li>
+              <li>Колір: Сірий</li>
+              <li>Комфорт: Стандарт</li>
+            </ul>
+          </div>
+        </div>
+        <div class="car__block">
+          <img src="../car__shop/images/bmw.webp" alt="BMW" class="car__image"/>
+          <div class="car__desc">
+            <h2 class="car__name">BMW 428 I. 2014</h2>
+            <h3 class="car__price">148 000 грн</h3>
+            <ul class="car__tips">
+              <li>Тип кузова: Седан</li>
+              <li>Країна виробник: Німеччина</li>
+              <li>Рік: 2014</li>
+              <li>Стан: Після ДТП</li>
+              <li>Тип палива: Бензин</li>
+              <li>Тип КП: Механіка</li>
+              <li>Колір: Синій</li>
+              <li>Комфорт: Люкс</li>
+            </ul>
+          </div>
+        </div>
+        <div class="car__block">
+          <img src="../car__shop/images/vaz.webp" alt="vaz"class="car__image"/>
+          <div class="car__desc">
+            <h2 class="car__name">Ваз 21099</h2>
+            <h3 class="car__price">96 000 грн</h3>
+            <ul class="car__tips">
+              <li>Тип кузова: Седан</li>
+              <li>Країна виробник: Україна</li>
+              <li>Рік: 2008</li>
+              <li>Стан: Побитий</li>
+              <li>Тип палива: Газ</li>
+              <li>Тип КП: Механіка</li>
+              <li>Колір: Червоний</li>
+              <li>Комфорт: Стандарт</li>
+            </ul>
+          </div>
+        </div>
+        <div class="car__block">
+          <img src="../car__shop/images/skoda.webp" alt="Skoda" class="car__image"/>
+          <div class="car__desc">
+            <h2 class="car__name">Skoda Octavia A7</h2>
+            <h3 class="car__price">390 000 грн</h3>
+            <ul class="car__tips">
+              <li>Тип кузова: Седан</li>
+              <li>Країна виробник: Німеччина</li>
+              <li>Рік: 2014</li>
+              <li>Стан: Новий</li>
+              <li>Тип палива: Дизель</li>
+              <li>Тип КП: Механіка</li>
+              <li>Колір: Синій</li>
+              <li>Комфорт: Стандарт</li>
+            </ul>
+          </div>
+        </div>
+        <div class="car__block">
+          <img src="../car__shop/images/hyundai.webp" alt="HYUNDAI" class="car__image"/>
+          <div class="car__desc">
+            <h2 class="car__name">HYUNDAI I30</h2>
+            <h3 class="car__price">210 000 грн</h3>
+            <ul class="car__tips">
+              <li>Тип кузова: Хетчбек</li>
+              <li>Країна виробник: Корея</li>
+              <li>Рік: 2008</li>
+              <li>Стан: Новий</li>
+              <li>Тип палива: Бензин</li>
+              <li>Тип КП: Механіка</li>
+              <li>Колір: Чорний</li>
+              <li>Комфорт: Стандарт</li>
+            </ul>
+          </div>
+        </div>
+        <div class="car__block">
+          <img src="../car__shop/images/mercedes.webp" alt="mercedes" class="car__image"/>
+          <div class="car__desc">
+            <h2 class="car__name">Mercedes-Benz GLE</h2>
+            <h3 class="car__price">623 000</h3>
+            <ul class="car__tips">
+              <li>Тип кузова: Позашляховик</li>
+              <li>Країна виробник: Німеччина</li>
+              <li>Рік: 2019</li>
+              <li>Стан: Новий</li>
+              <li>Тип палива: Бензин</li>
+              <li>Тип КП: Механіка</li>
+              <li>Колір: Сірий</li>
+              <li>Комфорт: Люкс</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <label class="footer__name">Made by Shinkovskiy Den</label>
+      </div>
+    </div>
+  </body>
+</html>

@@ -169,6 +169,10 @@ body {
   font-size: 1.1rem;
   margin: 15px;
 }
+/* 11 */
+.car__tips li {
+  line-height: 25px;
+}
 /* 10 */
 .footer {
   display: flex;
